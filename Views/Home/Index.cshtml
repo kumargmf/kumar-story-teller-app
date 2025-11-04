@@ -1,0 +1,100 @@
+@model HomeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4 mb-4">
+        <i class="fas fa-magic text-primary me-3"></i>
+        Welcome to @Model.ApplicationName
+    </h1>
+    <p class="lead mb-5">@Model.Description</p>
+</div>
+
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <div class="card shadow-lg border-0">
+            <div class="card-header bg-primary text-white">
+                <h3 class="card-title mb-0">
+                    <i class="fas fa-images me-2"></i>
+                    How It Works
+                </h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="feature-icon bg-light rounded-circle p-3 mb-3 mx-auto" style="width: 80px; height: 80px;">
+                            <i class="fas fa-upload fa-2x text-primary mt-2"></i>
+                        </div>
+                        <h5>1. Upload Images</h5>
+                        <p class="text-muted">Upload up to three images that will inspire your story</p>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="feature-icon bg-light rounded-circle p-3 mb-3 mx-auto" style="width: 80px; height: 80px;">
+                            <i class="fas fa-robot fa-2x text-primary mt-2"></i>
+                        </div>
+                        <h5>2. AI Analysis</h5>
+                        <p class="text-muted">Our AI analyzes your images using advanced computer vision</p>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="feature-icon bg-light rounded-circle p-3 mb-3 mx-auto" style="width: 80px; height: 80px;">
+                            <i class="fas fa-book fa-2x text-primary mt-2"></i>
+                        </div>
+                        <h5>3. Story Creation</h5>
+                        <p class="text-muted">Get a unique, engaging story crafted from your images</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-lg-6 mx-auto text-center">
+        <div class="alert alert-info" role="alert">
+            <h4 class="alert-heading">
+                <i class="fas fa-info-circle me-2"></i>
+                Coming Soon!
+            </h4>
+            <p>We're currently building this amazing feature. The StoryBook Teller will use cutting-edge AI technology powered by Amazon Bedrock and Anthropic's Claude to transform your images into captivating stories.</p>
+            <hr>
+            <p class="mb-0">Stay tuned for updates as we bring this magical storytelling experience to life!</p>
+        </div>
+        
+        <div class="mt-4">
+            <button class="btn btn-primary btn-lg me-3" disabled>
+                <i class="fas fa-upload me-2"></i>
+                Start Creating Stories
+            </button>
+            <small class="text-muted d-block mt-2">Feature coming soon</small>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-12">
+        <div class="card bg-light">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <i class="fas fa-lightbulb me-2"></i>
+                    About the Technology
+                </h5>
+                <p class="card-text">
+                    StoryBook Teller leverages the power of artificial intelligence to create unique narratives from visual content. 
+                    By combining advanced image recognition with natural language generation, we transform your photos into 
+                    engaging stories that capture the essence and emotion of your memories.
+                </p>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <h6><i class="fas fa-cloud me-2"></i>Powered by Amazon Bedrock</h6>
+                        <p class="small text-muted">Utilizing enterprise-grade AI infrastructure for reliable and scalable story generation.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6><i class="fas fa-brain me-2"></i>Anthropic's Claude AI</h6>
+                        <p class="small text-muted">Advanced language model that understands context and creates coherent, creative narratives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
