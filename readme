@@ -1,0 +1,1 @@
+create an application from zero called StoryBook Teller. I want this to be an ASP.Core website using .NET 9 that takes three images from the user and uses Amazon Bedrock with Anthropic’s Claude to generate a story based on them.
