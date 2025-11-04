@@ -377,6 +377,8 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+.idea/
+*.sln.DotSettings.user
 
 # User-specific files
 *.rsuser
